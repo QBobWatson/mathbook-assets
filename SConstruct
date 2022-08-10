@@ -3,7 +3,7 @@
 import fnmatch
 import os
 
-env = Environment()
+env = Environment(ENV=os.environ)
 
 matches = []
 for root, dirnames, filenames in os.walk('scss'):
